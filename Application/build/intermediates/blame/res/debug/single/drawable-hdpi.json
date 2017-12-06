@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\down_arrow.png",
+        "source": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\src\\main\\res\\drawable-hdpi\\down_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\tile.9.png",
+        "source": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\src\\main\\res\\drawable-hdpi\\tile.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\up_arrow.png",
+        "source": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\src\\main\\res\\drawable-hdpi\\up_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\right_arrow.png",
+        "source": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\src\\main\\res\\drawable-hdpi\\right_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\left_arrow.png",
+        "source": "C:\\Users\\Peter\\Downloads\\android-BluetoothLeGatt-master\\Application\\src\\main\\res\\drawable-hdpi\\left_arrow.png"
+    }
+]

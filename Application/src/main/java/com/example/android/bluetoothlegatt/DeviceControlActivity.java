@@ -85,8 +85,10 @@ public class DeviceControlActivity extends Activity {
     private TextView terminalToMaster;
     private TextView masterToTerminal;
     private TextView masterToSlave;
+    private TextView temperature;
+    private TextView numberMasterToSlaveMessages;
+    private TextView numberSlaveToMasterMessages;
     private int numberOfTerminalToMasterMessages = 0;
-    private int numberOfMasterToSlavesMessages = 0;
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -200,6 +202,9 @@ public class DeviceControlActivity extends Activity {
         sensor3 = (TextView) findViewById(R.id.sensor3Input);
         sensor4 = (TextView) findViewById(R.id.sensor4Input);
         sensor5 = (TextView) findViewById(R.id.sensor5Input);
+        temperature = (TextView) findViewById(R.id.temperatureInput);
+        numberMasterToSlaveMessages = (TextView) findViewById(R.id.M_S);
+        numberSlaveToMasterMessages = (TextView) findViewById(R.id.S_M);
         masterToTerminal = (TextView) findViewById(R.id.M_T);
         terminalToMaster = (TextView) findViewById(R.id.terminalToMaster);
         masterToSlave = (TextView) findViewById(R.id.M_S);
@@ -250,11 +255,14 @@ public class DeviceControlActivity extends Activity {
                 int brightnessData = mBluetoothLeService.readBrightnessData();
                 int accelerationData = mBluetoothLeService.readAccelerationData();
                 int forwardDistanceData = mBluetoothLeService.readForwardDistance();
+                int masterToSlave = mBluetoothLeService.readMasterToSlaveData();
+                 int slaveToMaster = mBluetoothLeService.readSlaveToMasterData();
                // int sensor1Data = mBluetoothLeService.readSensor1Data();
             int sensor2Data = mBluetoothLeService.readSensor2Data();
             int sensor3Data = mBluetoothLeService.readSensor3Data();
             int sensor4Data = mBluetoothLeService.readSensor4Data();
             int sensor5Data = mBluetoothLeService.readSensor5Data();
+            int temperatureData = mBluetoothLeService.readTemperatureData();
                 public void run() {
                     runOnUiThread(new Runnable() {
                         @Override
@@ -267,9 +275,11 @@ public class DeviceControlActivity extends Activity {
                             sensor3.setText("" + sensor3Data);
                             sensor4.setText("" + sensor4Data);
                             sensor5.setText("" + sensor5Data);
+                            numberMasterToSlaveMessages.setText(Integer.toString(masterToSlave) + " ");
+                            numberSlaveToMasterMessages.setText(Integer.toString(slaveToMaster) );
                             terminalToMaster.setText(Integer.toString(numberOfTerminalToMasterMessages) + " ");
                             masterToTerminal.setText(Integer.toString(numberOfTerminalToMasterMessages));
-                            masterToSlave.setText(Integer.toString(numberOfMasterToSlavesMessages) + " ");
+                            temperature.setText("" + temperatureData);
                         }
                     });
                 }
